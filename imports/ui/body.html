@@ -1,0 +1,18 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>TODO List</h1>
+    </header>
+    <ui>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ui>
+  </div>
+</body>
+
+<template name="task">
+  <li>
+    {{text}}
+  </li>
+</template>
